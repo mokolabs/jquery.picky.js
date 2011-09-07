@@ -8,11 +8,7 @@
 (function($) {
   
   $.fn.picky = function(selector) {
-    if (this) {
-      picky = this;
-    } else {
-      picky = '.picky';
-    }
+    picky = this;
      
     $(document).ready(function () {
       picky.find('select').each(function(index) {
