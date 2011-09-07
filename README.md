@@ -34,13 +34,13 @@ By default, jquery.picky.js uses a date class selector, with three nested select
       <select class="day"></select>
     </p>
 
-The "date" class can be customized. The year, month, and day classes are required but can be ordered in any way, provided they remain nested under the primary date class (or its customized equivalent).
+The date class can be customized. The year, month, and day classes are required but can be ordered in any way, provided they remain nested under the primary date class (or its customized equivalent).
 
 Here's a full markup example:
 
     <form action="post" target="demo.html">
       <p class="date">
-        <select class="year" name="post[year]">
+        <select class="year">
           <option value="2000">2000</option>
           <option value="2001">2001</option>
           <option value="2002">2002</option>
@@ -55,7 +55,7 @@ Here's a full markup example:
           <option value="2011">2011</option>
           <option value="2012">2012</option>
         </select>
-        <select class="month" name="post[month]">
+        <select class="month">
           <option value="1">Jan</option>
           <option value="2">Feb</option>
           <option value="3">Mar</option>
@@ -69,7 +69,7 @@ Here's a full markup example:
           <option value="11">Nov</option>
           <option value="12">Dec</option>
         </select>
-        <select class="day" name="post[day]">
+        <select class="day">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -113,8 +113,8 @@ Here's a full markup example:
 
 Q. Do I have to use select tags for date selectors?
 
-A. Yes. Picky is designed to make date selection use select tags easier. If you need something more complex, Picky isn't right for you.
+A. Yes. Picky is designed for use with select tags. If you need something more complex, Picky isn't right for you.
 
 Q. Can I use Picky with dates before the year 2000?
 
-A. Yes. The dates above (and in the demo) are just examples. You are welcome to define your own year ranges, either manually or programatically if you're using a web framework to generate your views.
+A. Yes. The dates above (and in the demo) are just examples. You are welcome to define your own year ranges, either manually or programmatically if you're using a web framework to generate your views.
