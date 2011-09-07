@@ -2,13 +2,21 @@
 
 jquery.picky.js is a jQuery plugin that provides simple client-side date validation.
 
-### installation
+### Features
 
-- git clone git@github.com:mokolabs/picky.git
-- copy jquery.picky.js into your javascript directory
-- add jquery.picky.js to your document head
+Instead of giving users annoying messages about invalid dates, jquery.picky.js seamlessly prevents users from entering bad dates in the first place. It does this by automatically updating day select options with the correct number of days for the selected month and year (even after the month and year change).
 
-### usage
+### How does it work?
+
+jquery.picky.js piggybacks on the Date object in Javascript. Each time a select value changes, the plugin will verify the selected date is a valid Date object. If not, it will decrement the day value until a valid date is found.
+
+### Installation
+
+- Download the plugin from git@github.com:mokolabs/picky.git
+- Copy jquery.picky.js into your javascript directory
+- Add jquery.picky.js to your document head
+
+### Usage
 
     <script>
       $(document).ready(function () {
@@ -16,7 +24,7 @@ jquery.picky.js is a jQuery plugin that provides simple client-side date validat
       });
   	</script>
   
-### sample markup
+### Sample markup
 
     <form action="post" target="demo.html">
       <p class="picky">
@@ -85,6 +93,6 @@ jquery.picky.js is a jQuery plugin that provides simple client-side date validat
       </p>
     </form>
     
-### demo
+### Demo
 
-- open demo.html in your browser
+- Open demo.html in your browser

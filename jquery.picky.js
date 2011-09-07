@@ -9,13 +9,11 @@
   
   $.fn.picky = function() {
     $(document).ready(function () {
-      if ($('.picky').length) {
-        $('.picky select').each(function(index) {
-          $(this).change(function () {
-            update_day_select_for($(this).closest(".picky"));
-          });
+      $('.picky select').each(function(index) {
+        $(this).change(function () {
+          update_day_select_for($(this).closest(".picky"));
         });
-      }
+      });
     });
   };
   
