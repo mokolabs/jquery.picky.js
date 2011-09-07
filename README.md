@@ -26,6 +26,18 @@ jquery.picky.js piggybacks on the Date object in Javascript. Each time a select 
   
 ### Sample markup
 
+By default, jquery.picky.js uses a custom class selector, with three nested class selectors:
+
+    <p class="date">
+      <select class="year"></select>
+      <select class="month"></select>
+      <select class="day"></select>
+    </p>
+
+The "date" class can be customized. The year, month, and day classes are required but can be ordered in any way, provided they remain nested under the primary date class (or its customized equivalent).
+
+Here's a full markup example:
+
     <form action="post" target="demo.html">
       <p class="date">
         <select class="year" name="post[year]">
