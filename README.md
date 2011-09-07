@@ -4,11 +4,11 @@ Picky is a jQuery plugin that provides simple client-side date validation when e
 
 ### Features
 
-Instead of giving users annoying messages about invalid dates, Picky seamlessly prevents users from entering bad dates in the first place. It does this by automatically updating day select options with the correct number of days for the selected month and year (even after the month and year change).
+Instead of giving users annoying messages about invalid dates, Picky seamlessly prevents users from entering bad dates in the first place. It does this by automatically updating day select options with the correct number of days for the selected month and year.
 
 ### How does it work?
 
-Picky piggybacks on the Date object in Javascript. Each time a select value changes, the plugin will verify the selected date is a valid Date object. If not, it will decrement the day value until a valid date is found.
+Picky piggybacks on the Date object in Javascript. Each time a select value changes, the plugin will verify the selected date is a valid Date object. If not, it will decrement the day value until a valid date within the selected month and year is found.
 
 ### Installation
 
