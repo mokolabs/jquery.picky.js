@@ -26,7 +26,7 @@ jquery.picky.js piggybacks on the Date object in Javascript. Each time a select 
   
 ### Sample markup
 
-By default, jquery.picky.js uses a custom class selector, with three nested class selectors:
+By default, jquery.picky.js uses a date class selector, with three nested select tags that use year, month, and day class selectors:
 
     <p class="date">
       <select class="year"></select>
@@ -108,3 +108,8 @@ Here's a full markup example:
 ### Demo
 
 - Open demo.html in your browser
+
+### FAQ
+
+Q. Do I have to use select tags for date selectors?
+A. Yes. Picky is designed to make date selection use select tags easier. If you need something more complex, Picky isn't right for you.
