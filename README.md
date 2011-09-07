@@ -12,7 +12,7 @@ Picky piggybacks on the Date object in Javascript. Each time a select value chan
 
 ### Installation
 
-- Download the plugin from git@github.com:mokolabs/picky.git
+- Download the plugin from git@github.com:mokolabs/jquery.picky.js.git
 - Copy jquery.picky.js into your javascript directory
 - Add jquery.picky.js to your document head
 
