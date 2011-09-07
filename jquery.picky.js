@@ -1,17 +1,23 @@
 // Support multiple date selectors per page
 
-// .picky
+// .date
 //   select.year
 //   select.month
 //   select.day
 
 (function($) {
   
-  $.fn.picky = function() {
+  $.fn.picky = function(selector) {
+    if (this) {
+      picky = this;
+    } else {
+      picky = '.picky';
+    }
+     
     $(document).ready(function () {
-      $('.picky select').each(function(index) {
+      picky.find('select').each(function(index) {
         $(this).change(function () {
-          update_day_select_for($(this).closest(".picky"));
+          update_day_select_for($(this).closest(picky));
         });
       });
     });

@@ -20,14 +20,14 @@ jquery.picky.js piggybacks on the Date object in Javascript. Each time a select 
 
     <script>
       $(document).ready(function () {
-        $().picky();
+        $(".date").picky();
       });
   	</script>
   
 ### Sample markup
 
     <form action="post" target="demo.html">
-      <p class="picky">
+      <p class="date">
         <select class="year" name="post[year]">
           <option value="2000">2000</option>
           <option value="2001">2001</option>
