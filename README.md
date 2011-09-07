@@ -112,4 +112,5 @@ Here's a full markup example:
 ### FAQ
 
 Q. Do I have to use select tags for date selectors?
+
 A. Yes. Picky is designed to make date selection use select tags easier. If you need something more complex, Picky isn't right for you.
