@@ -1,14 +1,14 @@
 # jquery.picky.js
 
-jquery.picky.js is a jQuery plugin that provides simple client-side date validation.
+Picky is a jQuery plugin that provides simple client-side date validation when entering dates using select tags.
 
 ### Features
 
-Instead of giving users annoying messages about invalid dates, jquery.picky.js seamlessly prevents users from entering bad dates in the first place. It does this by automatically updating day select options with the correct number of days for the selected month and year (even after the month and year change).
+Instead of giving users annoying messages about invalid dates, Picky seamlessly prevents users from entering bad dates in the first place. It does this by automatically updating day select options with the correct number of days for the selected month and year (even after the month and year change).
 
 ### How does it work?
 
-jquery.picky.js piggybacks on the Date object in Javascript. Each time a select value changes, the plugin will verify the selected date is a valid Date object. If not, it will decrement the day value until a valid date is found.
+Picky piggybacks on the Date object in Javascript. Each time a select value changes, the plugin will verify the selected date is a valid Date object. If not, it will decrement the day value until a valid date is found.
 
 ### Installation
 
@@ -114,3 +114,7 @@ Here's a full markup example:
 Q. Do I have to use select tags for date selectors?
 
 A. Yes. Picky is designed to make date selection use select tags easier. If you need something more complex, Picky isn't right for you.
+
+Q. Can I use Picky with dates before the year 2000?
+
+A. Yes. The dates above (and in the demo) are just examples. You are welcome to define your own year ranges, either manually or programatically if you're using a web framework to generate your views.
