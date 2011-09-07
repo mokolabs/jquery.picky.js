@@ -107,7 +107,7 @@ Here's a full markup example:
     
 ### Demo
 
-- [View online demo](http://mokolabs.github.com/jquery.picky.js/)
+[View online Picky demo](http://mokolabs.github.com/jquery.picky.js/)
 
 (You can also view this demo locally, by opening demo.html in your browser.)
 
