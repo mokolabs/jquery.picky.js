@@ -107,7 +107,9 @@ Here's a full markup example:
     
 ### Demo
 
-- Open demo.html in your browser
+- [View online demo](http://mokolabs.github.com/jquery.picky.js/)
+
+(You can also view this demo locally, by opening demo.html in your browser.)
 
 ### FAQ
 
